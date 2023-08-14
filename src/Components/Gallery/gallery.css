@@ -1,0 +1,11 @@
+.fixed-card-text {
+  height:250px;
+
+  }
+
+.img-auto{
+  height:220px;
+  object-fit: fill;
+}
+.w-auto {
+  width:auto;}
