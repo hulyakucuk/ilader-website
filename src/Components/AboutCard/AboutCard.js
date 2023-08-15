@@ -7,7 +7,7 @@ const AboutCard = ({ withLink }) => {
   return (
     <>
 
-    <Card className=" border-0">
+    <Card className=" border-0 py-5 mt-4">
       <Card.Header className='bg-white border-0 '>  
         <h2 className='bg-blue py-3 text-white text-center'>Hakkımızda</h2>
         </Card.Header>

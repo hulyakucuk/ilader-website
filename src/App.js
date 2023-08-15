@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import About from './Pages/About';
 import Activities from './Pages/Activities';
 import Navbar from './Components/Navbar/Navbar';
+import Media from './Pages/Media';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />}></Route>
       <Route path="/activities" element={<Activities />}></Route>
+      <Route path="/medya" element={<Media />}></Route>
 
       </Routes>
     </Router>

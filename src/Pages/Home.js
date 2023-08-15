@@ -1,5 +1,5 @@
 import React from 'react'
-import Gallery from "../Components/Gallery/Gallery";
+import Gallery from "../Components/Gallery/HomeGallery";
 import Contact from '../Components/Contact/Contact';
 import Footer from "../Components/Footer/Footer";
 import AboutCard from '../Components/AboutCard/AboutCard';
@@ -9,29 +9,30 @@ const Home = () => {
   
   return (
     <>
-     <div className='py-5'>
- 
-        <section className='slider'>
+     <div className='bg-light mt-2'>
+     <header className='container '>
+        <section className='slider mt-3'>
           <Slider/>
         </section>
-        <div className='container'>
+        </header>
+        <main className='container'>
         <section className='about-card py-5'>
         <AboutCard withLink={true}/>
 
         </section>
         <section id="gallery" className='py-3'>
-        <Gallery/>
+        <Gallery  withLink={true}/>
         </section>
-        </div>
+       
         <section id="contact" className='py-5 bg-light'>
         <Contact/>
         </section>
-
+        </main>
 
 
    
     </div>
-    <section className='py-5 mt-5'>
+    <section className='mt-5 '>
       <Footer/>
       </section>
 </>

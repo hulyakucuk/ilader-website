@@ -15,7 +15,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
+       process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
         process.env.REACT_APP_USER_PUBLIC_KEY
@@ -33,7 +33,7 @@ const Contact = () => {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Form ref={form} onSubmit={sendEmail} className="bg-light container">
+      <Form ref={form} onSubmit={sendEmail}>
         <Row>
           <Col lg={6} md={6} sm={12} className="mb-5 p-5">
             <FrequentlyAskedQuestions />
@@ -72,7 +72,7 @@ const Contact = () => {
               <Form.Control name="message" as="textarea" rows={3} required />
             </Form.Group>
             <Button variant="primary" type="submit" >
-              Submit
+              Gönder
             </Button>
           </Col>
         </Row>
@@ -91,6 +91,3 @@ const Contact = () => {
 };
 
 export default Contact;
-// REACT_APP_SERVICE_ID='service_q9l0fyk'
-// REACT_APP_TEMPLATE_ID='template_lozrzwb'
-// REACT_APP_USER_PUBLIC_KEY='WJlow3u6eEvR4Jvw5'
