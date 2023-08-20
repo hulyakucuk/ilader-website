@@ -1,11 +1,11 @@
-import React, { useRef,useState } from "react";
+import React, { useRef, useState } from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import emailjs from "@emailjs/browser";
-import Modal from 'react-bootstrap/Modal';
-import './Contact.css';
+import Modal from "react-bootstrap/Modal";
+import "./Contact.css";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
 const Contact = () => {
   const form = useRef();
@@ -15,17 +15,14 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-       process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
         process.env.REACT_APP_USER_PUBLIC_KEY
       )
-      .then(
-        (result) => {
-          handleShow();
-        },
-        
-      );
+      .then((result) => {
+        handleShow();
+      });
   };
   const [show, setShow] = useState(false);
 
@@ -39,7 +36,12 @@ const Contact = () => {
             <FrequentlyAskedQuestions />
           </Col>
 
-          <Col lg={6} md={6} sm={12} className=" mt-3 bg-img img-fluid p-5 text-white">
+          <Col
+            lg={6}
+            md={6}
+            sm={12}
+            className=" mt-3 bg-img img-fluid p-5 text-white"
+          >
             <Form.Label>Adınız:</Form.Label>
 
             <Form.Control
@@ -71,7 +73,7 @@ const Contact = () => {
               <Form.Label>Mesajınız:</Form.Label>
               <Form.Control name="message" as="textarea" rows={3} required />
             </Form.Group>
-            <Button variant="primary" type="submit" >
+            <Button variant="primary" type="submit">
               Gönder
             </Button>
           </Col>
@@ -82,9 +84,7 @@ const Contact = () => {
           <Modal.Title>İlader</Modal.Title>
         </Modal.Header>
         <Modal.Body>Mesajınız, gönderildi!</Modal.Body>
-        <Modal.Footer>
-
-        </Modal.Footer>
+        <Modal.Footer></Modal.Footer>
       </Modal>
     </>
   );

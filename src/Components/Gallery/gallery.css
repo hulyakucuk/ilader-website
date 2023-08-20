@@ -1,29 +1,46 @@
 .fixed-card-text {
-  height:250px;
+  height: 250px;
 
-  }
+}
 
-.img-auto{
-  height:250px;
+.center {
+  margin: 0 1rem;
+}
+
+.img-auto {
+  height: 280px;
   object-fit: fill;
 }
-.w-auto {
-  width:auto;}
 
-  .content {
-    position: relative;
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
-    overflow: hidden
+.w-auto {
+  width: auto;
 }
-.content:hover{
+
+.modal-image {
+  width: 500px;
+  height: auto;
+  margin: auto;
+
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  border: none;
+}
+
+.content:hover {
   cursor: pointer;
 
 }
+
 .content:hover .content-overlay {
   opacity: 1;
 }
+
 .content-details {
   position: absolute;
   text-align: center;
@@ -46,6 +63,7 @@
   left: 50%;
   opacity: 1
 }
+
 .content .content-overlay {
   background-color: rgba(151, 27, 27, 0.7);
   position: absolute;
@@ -59,8 +77,9 @@
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s,
-  
+
 }
+
 .content:hover .content-overlay {
   opacity: 1
 }
