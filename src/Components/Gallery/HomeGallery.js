@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import CardContents from "./HomeGalleryContent";
 import "./gallery.css";
 import Button from "react-bootstrap/Button";
-import Media from "../../Pages/Media";
+import Media from "../../Pages/Media/Media";
 const Gallery = ({ withLink }) => {
   return (
     <div className="pt-5 center">

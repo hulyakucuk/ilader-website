@@ -1,9 +1,9 @@
 import React from "react";
-import Gallery from "../Components/Gallery/HomeGallery";
-import Contact from "../Components/Contact/Contact";
-import Footer from "../Components/Footer/Footer";
-import AboutCard from "../Components/AboutCard/AboutCard";
-import Slider from "../Components/Slider/Slider";
+import Gallery from "../../Components/Gallery/HomeGallery";
+import Contact from "../../Components/Contact/Contact";
+import Footer from "../../Components/Footer/Footer";
+import AboutCard from "../../Components/AboutCard/AboutCard";
+import Slider from "../../Components/Slider/Slider";
 
 const Home = () => {
   return (
@@ -15,10 +15,10 @@ const Home = () => {
           </section>
         </header>
         <main className="container">
-          <section className="about-card py-5">
+          <section className="about-card py-3">
             <AboutCard withLink={true} />
           </section>
-          <section id="gallery" className="py-3">
+          <section id="gallery" className="py-3 ">
             <Gallery withLink={true} />
           </section>
 

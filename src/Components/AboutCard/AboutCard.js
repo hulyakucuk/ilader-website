@@ -1,13 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import About from "../../Pages/About";
+import About from "../../Pages/About/About";
 
 const AboutCard = ({ withLink }) => {
   return (
     <>
-      <Card className=" border-0 mt-5 py-4">
-        <Card.Header className="bg-white border-0 ">
+      <Card className=" border-0  py-4 bg-light">
+        <Card.Header className="border-0 bg-light">
           <h2 className="bg-blue py-3 text-white text-center">Hakkımızda</h2>
         </Card.Header>
         <Card.Body className="mt-5">
@@ -24,7 +24,7 @@ const AboutCard = ({ withLink }) => {
             alanında önemli çalışmalara imza atmıştır.
           </Card.Text>
         </Card.Body>
-        <Card.Footer className="text-muted bg-white border-0 mx-auto">
+        <Card.Footer className="text-muted bg-light border-0 mx-auto">
           {withLink && (
             <Button variant="secondary " href="/about" to={<About />}>
               Daha Fazla

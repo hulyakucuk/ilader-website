@@ -3,13 +3,15 @@ import Container from "react-bootstrap/Container";
 import "./Navbar.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Home from "../../Pages/Home";
-import About from "../../Pages/About";
-import Activities from "../../Pages/Activities";
+import Home from "../../Pages/Home/Home";
+import About from "../../Pages/About/About";
+import Activities from "../../Pages/Activities/Activities";
 import Contact from "../Contact/Contact";
 import logo from "../../assets/logo.jpg";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Media from "../../Pages/Media";
+import Media from "../../Pages/Media/Media";
+import VisionAndMission from "../../Pages/VisionAndMission/VisionAndMission";
+import Management from "../../Pages/Management/Management";
 
 const Navbarr = () => {
   return (
@@ -31,10 +33,10 @@ const Navbarr = () => {
               <NavDropdown.Item href="/about" to={<About />}>
                 Hakkımızda
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/yonetim-kurulu" to={<Management/>}>
                 Yönetim Kurulu
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
+              <NavDropdown.Item href="/vizyon-ve-misyonumuz" to={<VisionAndMission/>}>
                 Vizyon ve Misyonumuz
               </NavDropdown.Item>
             </NavDropdown>

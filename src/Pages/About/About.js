@@ -1,8 +1,8 @@
 import React from "react";
-import AboutCard from "../Components/AboutCard/AboutCard";
+import AboutCard from "../../Components/AboutCard/AboutCard";
 const About = () => {
   return (
-    <div>
+    <div className="py-5 mt-3 bg-light ">
       <AboutCard withLink={false} />
       <p className="w-75 mx-auto lh-lg">
         İlim ve İrşad Vakfı , toplumsal ve manevi değerlere sahip çıkma
