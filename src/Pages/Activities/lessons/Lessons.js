@@ -26,10 +26,10 @@ const Lessons = () => {
             <Col md={1} lg={1} className=" text-center ">
               {lesson.id}
             </Col>
-            <Col md={3} className="">
+            <Col md={3}>
               {lesson.name}
             </Col>
-            <Col md={8} className="">
+            <Col md={8} >
               {lesson.objective}
             </Col>
           </Row>

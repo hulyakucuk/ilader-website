@@ -5,6 +5,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Education2020To2021 = () => {
+
+  // veri ve anahtarı parametre olarak alır. Alınan parametre dizi içeriyorsa li etiketi içinde
+  // map fonksiyonu ile basar eğer dizi içermiyorsa p etiketi içine direkt basar
   const renderListItems = (data, key) => {
     return data.map((info) => (
       <div key={info[key]}>
@@ -12,7 +15,7 @@ const Education2020To2021 = () => {
           <ul>
             {info[key].map((item, index) => (
               <li className="list-style-circle" key={index}>
-                {item}
+                {item}{index}
               </li>
             ))}
           </ul>
