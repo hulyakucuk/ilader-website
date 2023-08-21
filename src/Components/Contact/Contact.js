@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import emailjs from "@emailjs/browser";
 import Modal from "react-bootstrap/Modal";
-import "./Contact.css";
+import "./style.css";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
 const Contact = () => {
   const form = useRef();
@@ -46,7 +46,7 @@ const Contact = () => {
 
             <Form.Control
               name="user_name"
-              placeholder="First name"
+              placeholder="Adınızı giriniz"
               className="mb-3"
               required
             />
@@ -54,7 +54,7 @@ const Contact = () => {
             <Form.Control
               name="user_surname"
               className="mb-3"
-              placeholder="Last name"
+              placeholder="Soyadınızı giriniz"
               required
             />
             <Form.Group className="mb-3" controlId="formGroupEmail">
@@ -62,7 +62,7 @@ const Contact = () => {
               <Form.Control
                 name="user_email"
                 type="email"
-                placeholder="Enter email"
+                placeholder="Email adresinizi giriniz"
                 required
               />
             </Form.Group>

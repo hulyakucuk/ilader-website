@@ -11,7 +11,20 @@
   height: 280px;
   object-fit: fill;
 }
+.btn-more{
+  background-color: #378350;
+  color: aliceblue;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
 
+}
+.btn-more:hover{
+  transform: scale(1.1);
+  background-color: aliceblue;
+  color: #378350;
+  transition: 0.3s ease;
+}
 .w-auto {
   width: auto;
 }

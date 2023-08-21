@@ -2,8 +2,8 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import CardContents from "./HomeGalleryContent";
-import "./gallery.css";
+import CardContents from "./data/HomeGalleryContent";
+import "./style.css";
 import Button from "react-bootstrap/Button";
 import Media from "../../Pages/Media/Media";
 const Gallery = ({ withLink }) => {
@@ -28,7 +28,7 @@ const Gallery = ({ withLink }) => {
       <div className="text-center ">
         {withLink && (
           <Button
-            className="my-5"
+            className="my-5 btn-more"
             variant="secondary "
             href="/medya"
             to={<Media />}

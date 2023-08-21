@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Slider from "react-slick";
 import Card from "react-bootstrap/Card";
-import Images from "./SliderImages";
-import "./gallery.css";
+import Images from "./data/SliderImages";
+import "./style.css";
 const GallerySlider = () => {
   // START MODAL
   const [showModal, setShowModal] = useState(false);

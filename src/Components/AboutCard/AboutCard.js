@@ -26,7 +26,7 @@ const AboutCard = ({ withLink }) => {
         </Card.Body>
         <Card.Footer className="text-muted bg-light border-0 mx-auto">
           {withLink && (
-            <Button variant="secondary " href="/about" to={<About />}>
+            <Button variant="secondary " className="btn-more" href="/about" to={<About />}>
               Daha Fazla
             </Button>
           )}

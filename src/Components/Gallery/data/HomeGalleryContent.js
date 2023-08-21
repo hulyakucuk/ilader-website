@@ -1,11 +1,11 @@
-import image1 from "../../assets/card-images/image1.jpg";
-import image2 from "../../assets/card-images/image2.jpg";
-import image3 from "../../assets/card-images/image3.jpg";
-import image4 from "../../assets/card-images/image4.jpg";
-import image5 from "../../assets/card-images/image5.jpg";
-import image6 from "../../assets/card-images/image6.jpg";
-import image7 from "../../assets/card-images/image7.jpg";
-import image8 from "../../assets/card-images/image8.jpg";
+import image1 from "../../../assets/card-images/image1.jpg";
+import image2 from "../../../assets/card-images/image2.jpg";
+import image3 from "../../../assets/card-images/image3.jpg";
+import image4 from "../../../assets/card-images/image4.jpg";
+import image5 from "../../../assets/card-images/image5.jpg";
+import image6 from "../../../assets/card-images/image6.jpg";
+import image7 from "../../../assets/card-images/image7.jpg";
+import image8 from "../../../assets/card-images/image8.jpg";
 const CardContents = [
   {
     text: "Kıymetli yazar Taha Kılınç, öğrencilerimizle bir araya gelerek, Kudüs üzerine gerçekleştirdiği kitap tahliliyle öğrencilerimize büyük bir fayda sağladı.",
