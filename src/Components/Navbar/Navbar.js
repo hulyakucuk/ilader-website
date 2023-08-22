@@ -14,7 +14,6 @@ import Management from "../../Pages/Management/Management";
 import Educators from "../../Pages/Activities/educators/Educators";
 import Education2020To2021 from "../../Pages/Activities/education/Education2020To2021";
 import Education2021To2022 from "../../Pages/Activities/education/Education2021To2022";
-import StudentDistribution from "../../Pages/Activities/student-distribution/StudentDistribution";
 import Lessons from "../../Pages/Activities/lessons/Lessons";
 
 const Navbarr = () => {
@@ -62,12 +61,6 @@ const Navbarr = () => {
               </NavDropdown.Item>
               <NavDropdown.Item href="/hocalarimiz" to={<Educators />}>
                 Hocalarımız
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/ogrenci-dagilimi"
-                to={<StudentDistribution />}
-              >
-                Öğrenci Dağılımları
               </NavDropdown.Item>
               <NavDropdown.Item href="/dersler" to={<Lessons />}>
                 Derslerimiz

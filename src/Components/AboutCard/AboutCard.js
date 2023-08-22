@@ -11,7 +11,6 @@ const AboutCard = ({ withLink }) => {
           <h2 className="bg-blue py-3 text-white text-center">Hakkımızda</h2>
         </Card.Header>
         <Card.Body className="mt-5">
-          {/* <Card.Title>Kurumlar Hakkında Kısa Bilgi</Card.Title> */}
           <Card.Text className="w-75 mx-auto lh-lg">
             İlahiyat Araştırmaları Derneği (İLADER), ülkemizin yaşadığı 28 Şubat
             sürecinin ardından manevi ve ilmi değerlerin korunması,
