@@ -11,10 +11,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Media from "../../Pages/Media/Media";
 import VisionAndMission from "../../Pages/VisionAndMission/VisionAndMission";
 import Management from "../../Pages/Management/Management";
-import Educators from "../../Pages/Activities/educators/Educators";
-import Education2020To2021 from "../../Pages/Activities/education/Education2020To2021";
-import Education2021To2022 from "../../Pages/Activities/education/Education2021To2022";
-import Lessons from "../../Pages/Activities/lessons/Lessons";
+import Activities from "../../Pages/Activities/Activities";
 
 const Navbarr = () => {
   return (
@@ -46,26 +43,9 @@ const Navbarr = () => {
                 Vizyon ve Misyonumuz
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Faaliyetlerimiz" id="basic-nav-dropdown">
-              <NavDropdown.Item
-                href="/egitimler-2020-2021"
-                to={<Education2020To2021 />}
-              >
-                2020-2021 Eğitimlerimiz
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/egitimler-2021-2022"
-                to={<Education2021To2022 />}
-              >
-                2021-2022 Eğitimlerimiz
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/hocalarimiz" to={<Educators />}>
-                Hocalarımız
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/dersler" to={<Lessons />}>
-                Derslerimiz
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/faaliyetler" to={<Activities />}>
+            Faaliyetler
+            </Nav.Link>
             <Nav.Link href="/medya" to={<Media />}>
               Medya
             </Nav.Link>

@@ -9,12 +9,11 @@ const Education2020To2021 = () => {
 
 
   return (
-    <Container className="mt-5 py-5 w-75 mx-auto">
+    <Container className="w-100 mx-auto">
     <Row className="border mt-5">
       <h6 className="py-3">
         <strong>
-          EYLÜL 2021-AĞUSTOS 2022 TARİHLERİ ARASINDAKİ FAALİYETLER
-        </strong>
+        HAZİRAN 2020 - AĞUSTOS 2021 TARİHLERİ ARASINDAKİ FAALİYETLER </strong>
       </h6>
     </Row>
 

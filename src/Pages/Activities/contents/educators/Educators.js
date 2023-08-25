@@ -6,14 +6,12 @@ import Col from "react-bootstrap/Col";
 const Educators = () => {
   return (
     <>
-      <Container className="py-5 mt-5 text-center w-75">
-        <h2 className="bg-blue py-3 text-white">Hocalarımız</h2>
-        <Row className="text-center p-3 border align-items-center">
-          <Col md={1} lg={1}></Col>
+      <Container className="text-center w-100 mx-auto mt-5">
+        <Row className=" text-md-start py-3 border align-items-center mx-auto">
           <Col md={3}>
             <strong>HOCA ADI </strong>
           </Col>
-          <Col md={2}>
+          <Col md={3}>
             <strong>ÜNVANI</strong>
           </Col>
           <Col md={3}>
@@ -25,12 +23,9 @@ const Educators = () => {
         </Row>
 
         {EducatorsData.map((item, index) => (
-          <Row key={index} className="border p-3">
-            <Col md={1} lg={1}>
-              {item.id}
-            </Col>
+          <Row key={index} className="border text-md-start py-3 mx-auto ">
             <Col md={3}>{item.name}</Col>
-            <Col md={2}>{item.title}</Col>
+            <Col md={3}>{item.title}</Col>
             <Col md={3}>{item.organization}</Col>
             <Col md={3}>{item.workarea}</Col>
           </Row>

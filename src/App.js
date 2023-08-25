@@ -8,10 +8,11 @@ import Navbar from "./Components/Navbar/Navbar";
 import Media from "./Pages/Media/Media";
 import VisionAndMission from "./Pages/VisionAndMission/VisionAndMission";
 import Management from "./Pages/Management/Management";
-import Education2020To2021 from "./Pages/Activities/education/Education2020To2021";
-import Education2021To2022 from "./Pages/Activities/education/Education2021To2022";
-import Educators from "./Pages/Activities/educators/Educators";
-import Lessons from "./Pages/Activities/lessons/Lessons";
+import Education2020To2021 from "./Pages/Activities/contents/education/Education2020To2021";
+import Education2021To2022 from "./Pages/Activities/contents/education/Education2021To2022";
+import Educators from "./Pages/Activities/contents/educators/Educators";
+import Lessons from "./Pages/Activities/contents/lessons/Lessons";
+import Activities from "./Pages/Activities/Activities";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path="/egitimler-2021-2022" element={<Education2021To2022/>}></Route>
           <Route path="/hocalarimiz" element={<Educators/>}></Route>
           <Route path="/dersler" element={<Lessons/>}></Route>
+          <Route path="/faaliyetler" element={<Activities/>}></Route>
+
         </Routes>
       </Router>
     </>

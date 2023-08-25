@@ -1,6 +1,5 @@
 .fixed-card-text {
   height: 250px;
-
 }
 
 .center {
@@ -11,27 +10,29 @@
   height: 280px;
   object-fit: fill;
 }
-.btn-more{
+
+.btn-more {
   background-color: #378350;
   color: aliceblue;
   padding: 0.8rem;
   font-size: 1rem;
   font-weight: 500;
-
 }
-.btn-more:hover{
+
+.btn-more:hover {
   transform: scale(1.1);
   background-color: aliceblue;
   color: #378350;
   transition: 0.3s ease;
 }
+
 .w-auto {
   width: auto;
 }
 
 .modal-image {
   width: 500px;
-  height: auto;  
+  height: auto;
 }
 
 .content {
@@ -45,7 +46,6 @@
 
 .content:hover {
   cursor: pointer;
-
 }
 
 .content:hover .content-overlay {
@@ -66,13 +66,13 @@
   transform: translate(-50%, -50%);
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .content:hover .content-details {
   top: 65%;
   left: 50%;
-  opacity: 1
+  opacity: 1;
 }
 
 .content .content-overlay {
@@ -87,10 +87,9 @@
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s,
-
+  transition: all 0.4s ease-in-out 0s;
 }
 
 .content:hover .content-overlay {
-  opacity: 1
+  opacity: 1;
 }

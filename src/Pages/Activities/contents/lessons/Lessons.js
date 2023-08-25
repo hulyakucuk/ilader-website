@@ -7,11 +7,9 @@ import LessonsInfo from "./data/LessonsInfo";
 const Lessons = () => {
   return (
     <>
-      <Container className="py-5 mt-5 text-center w-75">
-        <h2 className="bg-blue py-3 text-white">Derslerimiz</h2>
-        <Row className="text-start p-3 border align-items-center">
-          <Col md={1} lg={1}></Col>
-          <Col md={3}>
+      <Container className="text-center w-100 mx-auto mt-5">
+        <Row className="text-start py-3 border align-items-center mx-auto">
+          <Col md={4}>
             <strong>DERS (SEMİNER)</strong>
           </Col>
           <Col md={8}>
@@ -21,12 +19,10 @@ const Lessons = () => {
         {LessonsInfo.map((lesson) => (
           <Row
             key={lesson.id}
-            className="text-start p-3 border align-items-center"
+            className="text-start py-3 border align-items-center mx-auto"
           >
-            <Col md={1} lg={1} className=" text-center ">
-              {lesson.id}
-            </Col>
-            <Col md={3}>
+        
+            <Col md={4}>
               {lesson.name}
             </Col>
             <Col md={8} >

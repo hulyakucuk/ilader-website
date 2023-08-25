@@ -9,7 +9,7 @@ const Education2021To2022 = () => {
 
 
   return (
-    <Container className="mt-5 py-5 w-75 mx-auto">
+    <Container className="w-100 mx-auto">
       <Row className="border mt-5">
         <h6 className="py-3">
           <strong>

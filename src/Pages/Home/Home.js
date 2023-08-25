@@ -3,7 +3,7 @@ import Gallery from "../../Components/Gallery/HomeGallery";
 import Contact from "../../Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
 import AboutCard from "../../Components/AboutCard/AboutCard";
-import Slider from "../../Components/Slider/Slider";
+import Slider from "../../Components/Slider/Slider"
 
 const Home = () => {
   return (

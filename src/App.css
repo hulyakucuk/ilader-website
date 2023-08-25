@@ -4,9 +4,34 @@
   box-sizing: border-box;
   font-family: 'Mulish';
 }
+
 html,body,ul,ol{
   padding: 0;
   margin: 0;
+}
+body{
+  overflow-y: scroll !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #10447E; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #10447E;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#0e396b;
 }
 a{
   display: inline-block;
