@@ -1,73 +1,59 @@
 import React from "react";
 import logo from "../../assets/logo.jpg";
+import "./style.css";
 const Footer = () => {
   return (
     <footer className="text-white py-5 bg-blue ">
       <div className="w-75 mx-auto ">
-        <div className="row ">
-          <div className="col-md-12 col-lg-4 mx-auto mt-3 text-start">
+        <div className="row text-center">
+          <div className="col-md-4 mx-auto mt-4 text-lg-start">
             <span className="background-svg">
               <img alt="logo" src={logo} width="200" height="auto" />
             </span>
-
-            <p className="mt-4 lh-sm">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa.{" "}
-            </p>
-            <p className="fw-lighter mt-4">
-              ©AK PVT LTD 2021. All rights reserved
-            </p>
           </div>
-          <div className="col-md-4 col-lg-2 mx-auto mt-3 text-start">
-            <h6 className="text-white">Company</h6>
-            <ul className="fw-lighter">
+          <div className="col-md-4 mx-auto mt-4 text-lg-start ">
+            <ul className="links">
               <li>
-                <a href="/about">About</a>
+                <a href="/hakkimizda">Hakkımızda</a>
               </li>
               <li>
-                <a>Testimonials</a>
+                <a href="/yonetim-kurulu"> Yönetim Kurulu</a>
               </li>
               <li>
-                <a>Find a doctor</a>
+                <a href="/vizyon-ve-misyonumuz">Vizyon ve Misyonumuz</a>
               </li>
               <li>
-                <a>Apps</a>
+                <a href="/medya">Medya</a>
+              </li>
+              <li>
+                <a href="/medya">Medya</a>
+              </li>
+              <li>
+                <a href="/#contact">İletişim</a>
               </li>
             </ul>
           </div>
 
-          <div className="col-md-4 col-lg-2 mx-auto mt-3 text-start">
-            <h6 className="text-white">Region</h6>
-            <ul className="fw-lighter">
-              <li>
-                <a>Link</a>
-              </li>
-              <li>
-                <a>Link</a>
-              </li>
-              <li>
-                <a>Link</a>
-              </li>
-              <li>
-                <a>Link</a>
-              </li>
+          <div className="col-md-4 mx-auto mt-4 text-lg-start ">
+            <ul className="links">
+              <li>Ulaşım</li>
+              <li>Selamiali, Gazi Cd. No: 8, 34664 Üsküdar/İstanbul</li>
+              <li>Telefon: (0216) 343 50 00</li>
             </ul>
-          </div>
+            <ul className="media-buttons d-flex links">
+              <li>
+                <a href="https://twitter.com/marmarailader" className="link">
+                  <i className="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
 
-          <div className="col-md-4 col-lg-2 mx-auto mt-3 text-start">
-            <h6 className="text-white">Help</h6>
-            <ul className="fw-lighter">
               <li>
-                <a>Help center</a>
-              </li>
-              <li>
-                <a>Contact support</a>
-              </li>
-              <li>
-                <a>Instructions</a>
-              </li>
-              <li>
-                <a>How it works</a>
+                <a
+                  href="https://www.instagram.com/marmarailader/"
+                  className="link"
+                >
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
               </li>
             </ul>
           </div>

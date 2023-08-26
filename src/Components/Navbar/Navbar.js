@@ -30,7 +30,7 @@ const Navbarr = () => {
               Anasayfa
             </Nav.Link>
             <NavDropdown title="Kurumsal" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/about" to={<About />}>
+              <NavDropdown.Item href="/hakkimizda" to={<About />}>
                 Hakkımızda
               </NavDropdown.Item>
               <NavDropdown.Item href="/yonetim-kurulu" to={<Management />}>

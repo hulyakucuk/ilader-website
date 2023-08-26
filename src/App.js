@@ -21,7 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/hakkimizda" element={<About />}></Route>
           <Route path="/medya" element={<Media />}></Route>
           <Route path="/vizyon-ve-misyonumuz" element={<VisionAndMission />}></Route>
           <Route path="/yonetim-kurulu" element={<Management />}></Route>
