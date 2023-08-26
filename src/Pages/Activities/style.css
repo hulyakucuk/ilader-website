@@ -1,16 +1,16 @@
-.nav-link::after {
+.sidebar .nav-link::after {
   content: none; /* :after içeriğini kaldırma */
 }
 .sidebar {
   height: 100%;
 }
-.nav-link,
+.sidebar .nav-link,
 .nav-link:focus {
   color: aliceblue;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus {
   color: rgb(190, 234, 235);
   font-weight: bold;
 }

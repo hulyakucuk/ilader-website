@@ -29,17 +29,20 @@ const Navbarr = () => {
             <Nav.Link href="/" to={<Home />}>
               Anasayfa
             </Nav.Link>
-            <NavDropdown title="Kurumsal" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/hakkimizda" to={<About />}>
+            <NavDropdown  title="Kurumsal" id="basic-nav-dropdown">
+              <NavDropdown.Item  href="/hakkimizda" to={<About />}>
+                <span><i class="fa-regular fa-address-card"></i></span>
                 Hakkımızda
               </NavDropdown.Item>
-              <NavDropdown.Item href="/yonetim-kurulu" to={<Management />}>
-                Yönetim Kurulu
+              <NavDropdown.Item  href="/yonetim-kurulu" to={<Management />}>
+              <span><i class="fa-solid fa-user-group"></i></span>  Yönetim Kurulu
               </NavDropdown.Item>
               <NavDropdown.Item
+              
                 href="/vizyon-ve-misyonumuz"
                 to={<VisionAndMission />}
               >
+                <span><i class="fa-solid fa-head-side-virus"></i></span>
                 Vizyon ve Misyonumuz
               </NavDropdown.Item>
             </NavDropdown>

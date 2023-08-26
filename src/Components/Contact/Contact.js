@@ -1,14 +1,12 @@
 import React, { useRef, useState } from "react";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
+import { Col, Form, Row, Button, Modal } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import Modal from "react-bootstrap/Modal";
-import "./style.css";
 import FrequentlyAskedQuestions from "./FrequentlyAskedQuestions";
+import "./style.css";
+
 const Contact = () => {
-  const form = useRef();
+  const formRef = useRef();
+  const [showModal, setShowModal] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,21 +15,20 @@ const Contact = () => {
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
+        formRef.current,
         process.env.REACT_APP_USER_PUBLIC_KEY
       )
-      .then((result) => {
-        handleShow();
+      .then(() => {
+        setShowModal(true);
       });
   };
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleCloseModal = () => setShowModal(false);
+
   return (
     <>
-      <Form ref={form} onSubmit={sendEmail}>
-        <Row>
+      <Form ref={formRef} onSubmit={sendEmail}>
+      <Row>
           <Col lg={6} md={6} sm={12} className="mb-5 p-5">
             <FrequentlyAskedQuestions />
           </Col>
@@ -79,12 +76,11 @@ const Contact = () => {
           </Col>
         </Row>
       </Form>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>İlader</Modal.Title>
         </Modal.Header>
         <Modal.Body>Mesajınız, gönderildi!</Modal.Body>
-        <Modal.Footer></Modal.Footer>
       </Modal>
     </>
   );

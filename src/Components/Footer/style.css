@@ -1,25 +1,20 @@
-.links li a {
-    text-decoration: none;
-    color: aliceblue;
-
-}
-
 .links li {
     list-style: none;
     margin-bottom: 0.6rem;
 }
-
+.links li a {
+    text-decoration: none;
+    color: aliceblue;
+}
 .links li a:hover {
     color: rgb(189, 214, 235);
 }
-
 .media-buttons a {
     margin-left: 20px;
     font-size: 30px;
     color: aliceblue;
 }
-
-.media-buttons a :hover {
+.media-buttons a:hover {
     transform: scale(1.2);
     color: #10447E;
     background-color: aliceblue;

@@ -1,11 +1,9 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import { Card, Col, Row, Button } from "react-bootstrap";
 import CardContents from "./data/HomeGalleryContent";
 import "./style.css";
-import Button from "react-bootstrap/Button";
 import Media from "../../Pages/Media/Media";
+
 const Gallery = ({ withLink }) => {
   return (
     <div className="pt-5 center">
@@ -18,7 +16,7 @@ const Gallery = ({ withLink }) => {
               <Card.Img variant=" img-auto img-fluid" src={content.image} />
               <Card.Body className="content-details text-white">
                 <Card.Text className="fixed-card-text p-2 ">
-                  {CardContents[idx].text}
+                  {content.text}
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -29,9 +27,8 @@ const Gallery = ({ withLink }) => {
         {withLink && (
           <Button
             className="my-5 btn-more"
-            variant="secondary "
+            variant="secondary"
             href="/medya"
-            to={<Media />}
           >
             Daha Fazla
           </Button>
