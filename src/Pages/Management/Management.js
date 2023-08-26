@@ -23,7 +23,7 @@ const Management = () => {
         <h2 className="bg-blue py-3 text-white ">Yönetim Kurulu</h2>
 
         {/* filtrelenen verilere göre ilgili row lara map ile bastırma */}
-        <Row className="lightblue">
+        <Row className="lightblue mx-auto">
           <Col className="border p-5 ">
             {/* Başkan içeriği */}
             {baskan.map((person) => (
@@ -36,7 +36,7 @@ const Management = () => {
           </Col>
         </Row>
 
-        <Row className="lightgreen">
+        <Row className="lightgreen mx-auto">
           {/* Üyelerin içeriği */}
           {uye.map((person) => (
             <Col key={person.id} className="border p-5">
@@ -49,7 +49,7 @@ const Management = () => {
           ))}
         </Row>
 
-        <Row className="lightblue">
+        <Row className="lightblue mx-auto">
           {/* Koordinator içeriği */}
           {koordinator.map((person) => (
             <Col key={person.id} className="border p-5">

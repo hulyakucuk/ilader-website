@@ -9,10 +9,10 @@ const Lessons = () => {
     <>
       <Container className="text-center w-100 mx-auto mt-5">
         <Row className="text-start py-3 border align-items-center mx-auto">
-          <Col md={4}>
+          <Col md={4} lg={3}>
             <strong>DERS (SEMİNER)</strong>
           </Col>
-          <Col md={8}>
+          <Col md={8} lg={9}>
             <strong>HEDEF</strong>
           </Col>
         </Row>
@@ -21,11 +21,10 @@ const Lessons = () => {
             key={lesson.id}
             className="text-start py-3 border align-items-center mx-auto"
           >
-        
-            <Col md={4}>
+            <Col md={4} lg={3}>
               {lesson.name}
             </Col>
-            <Col md={8} >
+            <Col md={8} lg={9}>
               {lesson.objective}
             </Col>
           </Row>
