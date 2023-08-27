@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Col, Row, Button } from "react-bootstrap";
 import CardContents from "./data/HomeGalleryContent";
 import "./style.css";
-import Media from "../../Pages/Media/Media";
+// import Media from "../../Pages/Media/Media";
 
 const Gallery = ({ withLink }) => {
   return (

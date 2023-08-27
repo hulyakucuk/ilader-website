@@ -1,8 +1,15 @@
 import React from "react";
 import AboutCard from "../../Components/AboutCard/AboutCard";
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
-    <div className="py-5 mt-3 bg-light ">
+    <motion.div
+      className="py-5 mt-3 bg-light "
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <AboutCard withLink={false} />
       <p className="w-75 mx-auto lh-lg">
         İlim ve İrşad Vakfı , toplumsal ve manevi değerlere sahip çıkma
@@ -24,7 +31,7 @@ const About = () => {
         başarıyla sürdürmektedirler. Bu kutsal amaç uğruna gösterdikleri azim ve
         fedakarlık, toplumun manevi zenginliğine katkı sağlamaktadır.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

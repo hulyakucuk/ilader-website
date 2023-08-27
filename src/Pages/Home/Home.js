@@ -4,11 +4,15 @@ import Contact from "../../Components/Contact/Contact";
 import Footer from "../../Components/Footer/Footer";
 import AboutCard from "../../Components/AboutCard/AboutCard";
 import Slider from "../../Components/Slider/Slider"
-
+import {motion} from "framer-motion";
 const Home = () => {
   return (
     <>
-      <div className="bg-light mt-2">
+      <motion.div className="bg-light mt-2"
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      exit={{opacity:0}}
+      >
         <header className="container ">
           <section className="slider mt-3">
             <Slider />
@@ -26,10 +30,11 @@ const Home = () => {
             <Contact />
           </section>
         </main>
-      </div>
-      <section className="mt-5 ">
+   
+      <section className="mt-5 w-100">
         <Footer />
       </section>
+      </motion.div>
     </>
   );
 };
