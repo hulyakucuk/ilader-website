@@ -2,5 +2,6 @@
     background-image: linear-gradient(rgba(37, 37, 129, 0.5), rgba(64, 138, 164, 0.5)),
                       url("../../assets/ilader2.jpeg");
     background-repeat: space;
+    max-height: 500px;
   }
   

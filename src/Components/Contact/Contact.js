@@ -29,7 +29,7 @@ const Contact = () => {
     <>
       <Form ref={formRef} onSubmit={sendEmail}>
       <Row>
-          <Col lg={6} md={6} sm={12} className="mb-5 p-5">
+          <Col lg={6} md={6} sm={12} className="mb-5 mt-3">
             <FrequentlyAskedQuestions />
           </Col>
 

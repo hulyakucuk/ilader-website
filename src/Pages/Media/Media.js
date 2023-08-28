@@ -9,7 +9,7 @@ const Media = () => {
       initial={{opacity:0}}
       animate={{opacity:1}}
       exit={{opacity:0}}>
-      <h2 className="bg-blue text-white text-center mt-4 py-3">Medya</h2>
+   
         <GallerySlider />
       </motion.div>
     </>

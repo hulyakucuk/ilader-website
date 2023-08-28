@@ -9,7 +9,7 @@ const Slider = () => {
 
   return (
     <>
-<Carousel className='py-5'>
+    <Carousel className='py-5'>
       <Carousel.Item>
         <img className='img-fluid' src={slider1} alt='slider-1'/>
 

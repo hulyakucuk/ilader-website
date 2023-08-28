@@ -14,6 +14,8 @@ const Activities = () => {
   const handleComponentClick = (component) => {
     setSelectedComponent(component);
   };
+
+  
   return (
     <>
       <motion.div
