@@ -4,3 +4,7 @@
 .lightgreen{
     background-color: rgb(238, 253, 238);
 }
+.person-image{
+    height: 170px;
+    object-fit: fill;
+}

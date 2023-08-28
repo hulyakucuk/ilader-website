@@ -25,43 +25,43 @@ const Management = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Container className="py-5 mt-5 text-center">
-          <h2 className="bg-blue py-3 text-white ">Yönetim Kurulu</h2>
+        <Container className="py-5 mt-5 text-center ">
+          <h2 className="bg-blue py-3 text-white shadow-lg">Yönetim Kurulu</h2>
 
           {/* filtrelenen verilere göre ilgili row lara map ile bastırma */}
-          <Row className="lightblue mx-auto">
-            <Col className="border p-5 ">
+          <Row className="lightblue mx-auto shadow-lg">
+            <Col  md={6}  className="mx-auto ">
               {/* Başkan içeriği */}
               {baskan.map((person) => (
                 <div key={person.id}>
-                  <img src={person.image} alt={person.title} />
-                  <h3>{person.title}</h3>
+                  <img src={person.image} alt={person.title} className="img-fluid person-image mt-3 rounded-2 shadow-lg"/>
+                  <h3 className="mt-3">{person.title}</h3>
                   <p>Yönetim Kurulu Başkanı</p>
                 </div>
               ))}
             </Col>
           </Row>
 
-          <Row className="lightgreen mx-auto">
+          <Row className="lightgreen mx-auto shadow-lg">
             {/* Üyelerin içeriği */}
             {uye.map((person) => (
-              <Col key={person.id} className="border p-5">
+              <Col md={6} lg={2}  key={person.id} className=" mx-auto">
                 <div>
-                  <img src={person.image} alt={person.title} />
-                  <h3>{person.title}</h3>
+                  <img src={person.image} alt={person.title} className="img-fluid person-image mt-3 rounded-2 shadow-lg"/>
+                  <h3 className="mt-3">{person.title}</h3>
                   <p>Yönetim Kurulu Üyesi</p>
                 </div>
               </Col>
             ))}
           </Row>
 
-          <Row className="lightblue mx-auto">
+          <Row className="lightblue mx-auto shadow-lg">
             {/* Koordinator içeriği */}
             {koordinator.map((person) => (
-              <Col key={person.id} className="border p-5">
+              <Col  md={6}   key={person.id} className="mx-auto">
                 <div>
-                  <img src={person.image} alt={person.title} />
-                  <h3>{person.title}</h3>
+                  <img src={person.image} alt={person.title} className="img-fluid person-image mt-3 rounded-2 shadow-lg" />
+                  <h3 className="mt-3">{person.title}</h3>
                   <p>Koordinatör</p>
                 </div>
               </Col>

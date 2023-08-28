@@ -1,35 +1,42 @@
+import st from "../../../assets/management/selahaddin-timur.jpeg";
+import ha from "../../../assets/management/harun-akkoyun.jpeg";
+import mg from "../../../assets/management/mustafa-genc.jpeg";
+import yk from "../../../assets/management/yakup-kara.jpeg";
+import tg from "../../../assets/management/tahir-gngor.jpeg";
+
+
 const managementData = [
   {
     id: 1,
-    image: "resim1.jpg",
+    image: st,
     title: "Selahaddin Timur",
-    positions: ['Yönetim Kurulu Başkanı', 'Yönetim Kurulu Üyesi']
+    positions: ['Yönetim Kurulu Başkanı', 'Yönetim Kurulu Üyesi'],
   },
 
   {
     id: 2,
-    image: "resim2.jpg",
+    image: ha,
     title: "Harun Akkoyun",
     positions: "Yönetim Kurulu Üyesi",
   },
   {
     id: 3,
-    image: "resim2.jpg",
+    image: mg,
     title: "Dr. Mustafa Genç",
     positions: "Yönetim Kurulu Üyesi",
   },
   {
     id: 4,
-    image: "resim2.jpg",
+    image: tg,
     title: "Dr. Tahir Güngör",
     positions: "Yönetim Kurulu Üyesi",
   },
 
   {
     id: 5,
-    image: "resim3.jpg",
+    image: yk,
     title: "Dr. Yakup Kara",
-    positions: ['Koordinatör', 'Yönetim Kurulu Üyesi']
+    positions: ['Koordinatör', 'Yönetim Kurulu Üyesi'],
   },
 ];
 export default managementData;
